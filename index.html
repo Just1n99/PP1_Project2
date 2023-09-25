@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
+    <style id="Stylesheet1">
         body {
             font: 100% Lucida Sans, Verdana;
             margin: 20px;
@@ -14,30 +14,58 @@
         .container {
             min-width: 900px;
         }
+
+        .middle {
+            position: relative;
+            overflow: auto;
+        }
+
         #top {
-            background-color: green;
+            background-color: rgb(66, 160, 66);
             padding: 15px;
             color: white;
             border-radius: 4px;
             margin: 4px;
         }
-        #selecBar {
+
+        #top h1, #top p {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #selectBar {
             width: 200px;
             float: left;
         }
 
+        #menuList {
+            padding: 0px;
+            margin: 0px;
+        }
+
         .item {
-            background-color: white;
+            background-color: rgb(245, 241, 241);
             border: 1px solid;
             list-style-type: none;
             padding: 2px;
             cursor: pointer;
+            border-radius: 4px;
+            margin: 4px;
+        }
+
+        .item:hover {
+            background-color: white;
         }
 
         .item:first-child {
-            background-color: green;
+            background-color: rgb(66, 160, 66);
             color:white;
             font-weight: bold;
+        }
+
+        #main {
+            padding: 10px;
+            margin: 0 210px;
         }
         
     </style>
@@ -51,13 +79,20 @@
         <div id="middle">
             <div id="selectBar">
                 <ul id="menuList">
-                    <li class="item" onclick="reStyle(0)">Styelsheet1</li>
-                    <li class="item" onclick="reStyle(1)">Styelsheet2</li>
+                    <li class="item" onclick="reStyle(0)">Styelsheet 1</li>
+                    <li class="item" onclick="reStyle(1)">Stylesheet 2</li>
                     <li class="item" onclick="reStyle()">No Styelsheet</li>
                 </ul>
             </div>
-            <div id="main"></div>
-            <div id="sideBar"></div>
+            <div id="main">
+                <h1>Same Page Different Stylesheets</h1>
+                <p1>This is a demonstration of how different stylesheets can change the layout of your HTML page. You can change the layout of this page by selecting different stylesheets in the menu, or by selecting one of the following links:</p1>
+                <h2>No Styles</h2>
+                <p2>This page uses DIV elements to group different sections of the HTML page. Click here to see how the page looks like with no stylesheet:</p2>
+            </div>
+            <div id="sideBar">
+                
+            </div>
         </div>
         <div id="bottom">
 
