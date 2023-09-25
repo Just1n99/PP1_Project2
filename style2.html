@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style id="Stylesheet1">
+        body {
+            font: 100% Verdana;
+            margin: 20px;
+            margin-top: 50px;
+            line-height: 26px;
+        }
+
+        .container {
+            xmin-width: 900px;
+        }
+
+        .middle {
+            position: relative;
+            overflow: auto;
+        }
+
+        #menuList {
+            padding: 0;
+            position: relative;
+            overflow: auto;
+        }
+
+        .item {
+            width: 165px;
+            float: left;
+            background-color: rgb(77, 77, 77);
+            color: white;
+            list-style-type: none;
+            margin: 4px;
+            padding: 2px;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .item:nth-child(2) {
+            background-color: rgb(52, 194, 106);
+        }
+
+        .item:hover {
+            background-color: black;
+        }
+
+        h1, h2, h3 {
+            color: rgb(49, 153, 49);
+        }
+
+        #sideBar {
+            background-color: rgb(236, 236, 236);
+            border: 1px solid rgb(211, 211, 211);
+            padding-left: 10px;
+            margin-top: 20px;
+        }
+
+        #bottom {
+            text-align: center;
+            padding: 10px;
+            font-size: 70%;
+            line-height: 14px;
+        }
+
+        a {
+            color: black;
+        }
+
+        a:hover {
+            color: rgb(51, 195, 66)
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="top">
+            <h1>Welcome to 유승준's Homepage!</h1>
+            <p1>Use the menu to select different Stylesheets</p1>
+        </div>
+        <div class="middle">
+            <div id="selectBar">
+                <ul id="menuList">
+                    <li class="item" onclick="reStyle(0)">Styelsheet 1</li>
+                    <li class="item" onclick="reStyle(1)">Stylesheet 2</li>
+                    <li class="item" onclick="reStyle()">No Stylesheet</li>
+                </ul>
+            </div>
+            <div id="main">
+                <h1>Same Page Different Stylesheets</h1>
+                <p1>This is a demonstration of how different stylesheets can change the layout of your HTML page. You can change the layout of this page by selecting different stylesheets in the menu, or by selecting one of the following links:</p1>
+                <br>
+                <a href="#" onclick="reStyle(0); return false">Stylesheet1</a>
+                ,
+                <a href="#" onclick="reStyle(1); return false">Stylesheet2</a>
+                .
+                <h2>No Styles</h2>
+                <p2>This page uses DIV elements to group different sections of the HTML page. Click here to see how the page looks like with no stylesheet:</p2>
+                <br>
+                <a href="#" onclick="reStyle(); return false">No Stylesheet</a>
+                .
+            </div>
+            <div id="sideBar">
+                <h3>Side-Bar</h3>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+            </div>
+        </div>
+        <div id="bottom">
+            <p1>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p1>
+        </div>
+    </div>
+</body>
+</html>
