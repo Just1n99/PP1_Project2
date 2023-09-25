@@ -4,14 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body {
+            font: 100% Lucida Sans, Verdana;
+            margin: 20px;
+            line-height: 26px;
+        }
+
+        .container {
+            min-width: 900px;
+        }
+        #top {
+            background-color: green;
+            padding: 15px;
+            color: white;
+            border-radius: 4px;
+            margin: 4px;
+        }
+        #selecBar {
+            width: 200px;
+            float: left;
+        }
+
+        .item {
+            background-color: white;
+            border: 1px solid;
+            list-style-type: none;
+            padding: 2px;
+            cursor: pointer;
+        }
+
+        .item:first-child {
+            background-color: green;
+            color:white;
+            font-weight: bold;
+        }
+        
+    </style>
 </head>
 <body>
-    <div id="container">
+    <div class="container">
         <div id="top">
-
+            <h1>Welcome to 유승준's Homepage!</h1>
+            <p1>Use the menu to select different Stylesheets</p1>
         </div>
         <div id="middle">
-            <div id="selectBar"></div>
+            <div id="selectBar">
+                <ul id="menuList">
+                    <li class="item" onclick="reStyle(0)">Styelsheet1</li>
+                    <li class="item" onclick="reStyle(1)">Styelsheet2</li>
+                    <li class="item" onclick="reStyle()">No Styelsheet</li>
+                </ul>
+            </div>
             <div id="main"></div>
             <div id="sideBar"></div>
         </div>
