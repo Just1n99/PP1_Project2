@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style id="Stylesheet1">
+        body {
+            font: 100% Lucida Sans, Verdana;
+            margin: 20px;
+            line-height: 26px;
+        }
+
+        .container {
+            xmin-width: 900px;
+        }
+
+        .middle {
+            position: relative;
+            overflow: auto;
+        }
+
+        #top {
+            background-color: rgb(70, 199, 117);
+            padding: 15px;
+            color: white;
+            border-radius: 4px;
+            margin: 4px;
+        }
+
+        #top h1, #top p {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #selectBar {
+            width: 200px;
+            float: left;
+        }
+
+        #menuList {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .item {
+            background-color: rgb(245, 241, 241);
+            border: 1px solid rgb(222, 222, 222);
+            list-style-type: none;
+            padding: 2px;
+            cursor: pointer;
+            border-radius: 4px;
+            margin: 4px;
+        }
+
+        .item:hover {
+            background-color: white;
+        }
+
+        .item:first-child {
+            background-color: rgb(70, 199, 117);
+            color:white;
+            font-weight: bold;
+        }
+
+        #main {
+            padding: 10px;
+            margin: 0 210px;
+        }
+
+        #sideBar {
+            background-color: rgb(23, 170, 220);
+            color: white;
+            padding: 10px;
+            width: 180px;
+            bottom: 0;
+            top: 0;
+            right: 0;
+            position: absolute;
+            border-radius: 4px;
+            margin: 4px;
+        }
+
+        #bottom {
+            border: 1px solid rgb(188, 188, 188);
+            background-color: rgb(236, 236, 236);
+            text-align: center;
+            padding: 10px;
+            font-size: 12px;
+            line-height: 14px;
+        }
+
+        a {
+            color: black;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="top">
+            <h1>Welcome to 유승준's Homepage!</h1>
+            <p1>Use the menu to select different Stylesheets</p1>
+        </div>
+        <div class="middle">
+            <div id="selectBar">
+                <ul id="menuList">
+                    <li class="item" onclick="reStyle(0)">Styelsheet 1</li>
+                    <li class="item" onclick="reStyle(1)">Stylesheet 2</li>
+                    <li class="item" onclick="reStyle()">No Stylesheet</li>
+                </ul>
+            </div>
+            <div id="main">
+                <h1>Same Page Different Stylesheets</h1>
+                <p1>This is a demonstration of how different stylesheets can change the layout of your HTML page. You can change the layout of this page by selecting different stylesheets in the menu, or by selecting one of the following links:</p1>
+                <br>
+                <a href="#" onclick="reStyle(0); return false">Stylesheet1</a>
+                ,
+                <a href="#" onclick="reStyle(1); return false">Stylesheet2</a>
+                .
+                <h2>No Styles</h2>
+                <p2>This page uses DIV elements to group different sections of the HTML page. Click here to see how the page looks like with no stylesheet:</p2>
+                <br>
+                <a href="#" onclick="reStyle(); return false">No Stylesheet</a>
+                .
+            </div>
+            <div id="sideBar">
+                <h3>Side-Bar</h3>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+            </div>
+        </div>
+        <div id="bottom">
+            <p1>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p1>
+        </div>
+    </div>
+</body>
+</html>
