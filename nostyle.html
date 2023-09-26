@@ -4,6 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        #menuList .item a{
+            color: black;
+            text-decoration: none;
+        }
+        a {
+            color: blue;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -14,23 +23,29 @@
         <div class="middle">
             <div id="selectBar">
                 <ul id="menuList">
-                    <li class="item" onclick="reStyle(0)">Styelsheet 1</li>
-                    <li class="item" onclick="reStyle(1)">Stylesheet 2</li>
-                    <li class="item" onclick="reStyle()">No Stylesheet</li>
+                    <li class="item"><a href="file:///Users/justinyu/Desktop/PP1_Project2/style1.html">Stylesheet 1</a></li>
+                    <li class="item"><a href="file:///Users/justinyu/Desktop/PP1_Project2/style2.html">Stylesheet 2</a></li>
+                    <li class="item"><a href="">Stylesheet 3</a></li>
+                    <li class="item"><a href="">Stylesheet 4</a></li>
+                    <li class="item"><a href="">No Stylesheet</a></li>
                 </ul>
             </div>
             <div id="main">
                 <h1>Same Page Different Stylesheets</h1>
                 <p1>This is a demonstration of how different stylesheets can change the layout of your HTML page. You can change the layout of this page by selecting different stylesheets in the menu, or by selecting one of the following links:</p1>
                 <br>
-                <a href="file:///Users/justinyu/Desktop/PP1_Project2/style1.html" onclick="reStyle(0); return false">Stylesheet1</a>
+                <a href="file:///Users/justinyu/Desktop/PP1_Project2/style1.html">Stylesheet1</a>
                 ,
-                <a href="file:///Users/justinyu/Desktop/PP1_Project2/style2.html" onclick="reStyle(1); return false">Stylesheet2</a>
+                <a href="file:///Users/justinyu/Desktop/PP1_Project2/style2.html">Stylesheet2</a>
+                ,
+                <a href="">Stylesheet3</a>
+                ,
+                <a href="">Stylesheet4</a>
                 .
                 <h2>No Styles</h2>
                 <p2>This page uses DIV elements to group different sections of the HTML page. Click here to see how the page looks like with no stylesheet:</p2>
                 <br>
-                <a href="#" onclick="reStyle(); return false">No Stylesheet</a>
+                <a href="">No Stylesheet</a>
                 .
             </div>
             <div id="sideBar">

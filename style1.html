@@ -21,7 +21,7 @@
         }
 
         #top {
-            background-color: rgb(70, 199, 117);
+            background-color: rgb(58, 178, 126);
             padding: 15px;
             color: white;
             border-radius: 4px;
@@ -43,7 +43,11 @@
             margin: 0px;
         }
 
-        .item {
+        #menuList a {
+            text-decoration: none;
+        }
+
+        #menuList .item {
             background-color: rgb(245, 241, 241);
             border: 1px solid rgb(222, 222, 222);
             list-style-type: none;
@@ -53,14 +57,17 @@
             margin: 4px;
         }
 
-        .item:hover {
+        #menuList .item:hover {
             background-color: white;
         }
 
-        .item:first-child {
-            background-color: rgb(70, 199, 117);
-            color:white;
+        #menuList .item:first-child {
+            background-color: rgb(58, 178, 126);
             font-weight: bold;
+        }
+
+        #menuList .item:first-child a {
+            color: white;
         }
 
         #main {
@@ -86,8 +93,10 @@
             background-color: rgb(236, 236, 236);
             text-align: center;
             padding: 10px;
-            font-size: 12px;
+            font-size: 11px;
             line-height: 14px;
+            margin-top: 20px;
+            border-radius: 4px;
         }
 
         a {
@@ -109,23 +118,29 @@
         <div class="middle">
             <div id="selectBar">
                 <ul id="menuList">
-                    <li class="item" onclick="reStyle(0)">Styelsheet 1</li>
-                    <li class="item" onclick="reStyle(1)">Stylesheet 2</li>
-                    <li class="item" onclick="reStyle()">No Stylesheet</li>
+                    <li class="item"><a href="">Stylesheet 1</a></li>
+                    <li class="item"><a href="file:///Users/justinyu/Desktop/PP1_Project2/style2.html">Stylesheet 2</a></li>
+                    <li class="item"><a href="">Stylesheet 3</a></li>
+                    <li class="item"><a href="">Stylesheet 4</a></li>
+                    <li class="item"><a href="file:///Users/justinyu/Desktop/PP1_Project2/nostyle.html">No Stylesheet</a></li>
                 </ul>
             </div>
             <div id="main">
                 <h1>Same Page Different Stylesheets</h1>
                 <p1>This is a demonstration of how different stylesheets can change the layout of your HTML page. You can change the layout of this page by selecting different stylesheets in the menu, or by selecting one of the following links:</p1>
                 <br>
-                <a href="#" onclick="reStyle(0); return false">Stylesheet1</a>
+                <a href="">Stylesheet1</a>
                 ,
-                <a href="file:///Users/justinyu/Desktop/PP1_Project2/style2.html" onclick="reStyle(1); return false">Stylesheet2</a>
+                <a href="file:///Users/justinyu/Desktop/PP1_Project2/style2.html">Stylesheet2</a>
+                ,
+                <a href="">Stylesheet3</a>
+                ,
+                <a href="">Stylesheet4</a>
                 .
                 <h2>No Styles</h2>
                 <p2>This page uses DIV elements to group different sections of the HTML page. Click here to see how the page looks like with no stylesheet:</p2>
                 <br>
-                <a href="file:///Users/justinyu/Desktop/PP1_Project2/nostyle.html" onclick="reStyle(); return false">No Stylesheet</a>
+                <a href="file:///Users/justinyu/Desktop/PP1_Project2/nostyle.html">No Stylesheet</a>
                 .
             </div>
             <div id="sideBar">
